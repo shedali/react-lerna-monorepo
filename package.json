@@ -1,0 +1,17 @@
+{
+  "name": "react-lerna-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lerna run build --paralllel --stream",
+    "start": "lerna run start --parallel --stream"
+  },
+  "keywords": [],
+  "author": "Brittany <moore.brittanyann@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.9.0"
+  }
+}
