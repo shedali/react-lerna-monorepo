@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Note: this script assumes that the dependencies are up to date
+
+echo "removing public directory"
+rm -rf public
+
+echo "copying dependencies code into public directory"
+cd node_modules/@bam
+rsync -Rq `find **/build` ../../public
+
+echo "package built successfully"
